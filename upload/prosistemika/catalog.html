@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROSISTEMIKA — Комплексное снабжение предприятий промышленным оборудованием</title>
+	
+    <link rel="stylesheet" href="./libs/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__content">
+				<a href="/" class="header__logo">
+					<picture>
+						<source srcset="./img/logo-mob.png" media="(max-width: 1200px)">
+						<source srcset="./img/logo.png" media="(min-width: 1201px)">
+						<img src="./img/logo.png" alt="PROSISTEMIKA" width="407" height="103">
+					</picture>
+				</a>
+				<div class="header__center">
+					<nav class="header__nav">
+						<ul>
+							<li><a href="#">Производители</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__center_bottom">
+						<button type="button" class="header__catalog catalog-btn">
+							Каталог
+							<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<ellipse cx="3.54167" cy="3.14815" rx="3.54167" ry="3.14815" fill="currentColor"/>
+								<ellipse cx="13.4557" cy="3.14815" rx="3.54167" ry="3.14815" fill="currentColor"/>
+								<ellipse cx="13.4557" cy="11.9606" rx="3.54167" ry="3.14815" fill="currentColor"/>
+								<ellipse cx="3.54167" cy="11.9606" rx="3.54167" ry="3.14815" fill="currentColor"/>
+							</svg>
+						</button>
+						<form class="header__search search">
+							<input type="search" class="search__input" placeholder="Поиск по каталогу или артикулу...">
+							<button type="submit" class="search__btn" aria-label="Найти">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M21.7992 20.2034L17.347 15.7494C18.6819 14.0098 19.3052 11.8276 19.0903 9.64545C18.8755 7.46328 17.8386 5.44454 16.19 3.99875C14.5415 2.55295 12.4047 1.78837 10.2131 1.86009C8.02158 1.93182 5.93937 2.83448 4.38888 4.38497C2.83839 5.93546 1.93573 8.01768 1.864 10.2092C1.79228 12.4008 2.55686 14.5376 4.00265 16.1861C5.44845 17.8347 7.46719 18.8715 9.64936 19.0864C11.8315 19.3013 14.0137 18.678 15.7533 17.3431L20.2092 21.8C20.3139 21.9047 20.4381 21.9877 20.5748 22.0443C20.7116 22.1009 20.8581 22.1301 21.0061 22.1301C21.1541 22.1301 21.3006 22.1009 21.4374 22.0443C21.5741 21.9877 21.6983 21.9047 21.803 21.8C21.9076 21.6954 21.9906 21.5711 22.0473 21.4344C22.1039 21.2977 22.1331 21.1511 22.1331 21.0031C22.1331 20.8551 22.1039 20.7086 22.0473 20.5719C21.9906 20.4351 21.9076 20.3109 21.803 20.2063L21.7992 20.2034ZM4.12829 10.4994C4.12829 9.23853 4.50218 8.00599 5.20267 6.95762C5.90316 5.90926 6.8988 5.09216 8.06368 4.60965C9.22856 4.12714 10.5104 4.0009 11.747 4.24688C12.9836 4.49286 14.1195 5.10002 15.0111 5.99158C15.9027 6.88314 16.5098 8.01905 16.7558 9.25568C17.0018 10.4923 16.8755 11.7741 16.393 12.939C15.9105 14.1039 15.0934 15.0995 14.045 15.8C12.9967 16.5005 11.7641 16.8744 10.5033 16.8744C8.81307 16.8726 7.19257 16.2004 5.9974 15.0053C4.80223 13.8101 4.13003 12.1896 4.12829 10.4994Z" fill="white"/>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__contacts">
+						<a href="tel:+78002003047" class="header__phone">+7 (800) 200-30-47</a>
+						<a href="mailto:sale@prosistemika.ru" class="header__email">sale@prosistemika.ru</a>
+					</div>
+					<div class="header__btns">
+						<button type="button" class="header__cta btn btn--primary btn--sm">Оставить заявку</button>
+						<a href="mailto:sale@prosistemika.ru" class="header__icon header__icon--mail" aria-label="Email">
+							<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+						</a>
+						<a href="tel:+78002003047" class="header__icon header__icon--phone" aria-label="Телефон">
+							<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+						</a>
+						<button type="button" class="header__cart" aria-label="Корзина">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.375 20.25C9.375 20.6208 9.26503 20.9834 9.059 21.2917C8.85298 21.6 8.56014 21.8404 8.21753 21.9823C7.87492 22.1242 7.49792 22.1613 7.1342 22.089C6.77049 22.0166 6.4364 21.8381 6.17417 21.5758C5.91195 21.3136 5.73337 20.9795 5.66103 20.6158C5.58868 20.2521 5.62581 19.8751 5.76773 19.5325C5.90964 19.1899 6.14996 18.897 6.45831 18.691C6.76665 18.485 7.12916 18.375 7.5 18.375C7.99728 18.375 8.47419 18.5725 8.82582 18.9242C9.17746 19.2758 9.375 19.7527 9.375 20.25ZM17.25 18.375C16.8792 18.375 16.5166 18.485 16.2083 18.691C15.9 18.897 15.6596 19.1899 15.5177 19.5325C15.3758 19.8751 15.3387 20.2521 15.411 20.6158C15.4834 20.9795 15.662 21.3136 15.9242 21.5758C16.1864 21.8381 16.5205 22.0166 16.8842 22.089C17.2479 22.1613 17.6249 22.1242 17.9675 21.9823C18.3101 21.8404 18.603 21.6 18.809 21.2917C19.015 20.9834 19.125 20.6208 19.125 20.25C19.125 19.7527 18.9275 19.2758 18.5758 18.9242C18.2242 18.5725 17.7473 18.375 17.25 18.375ZM22.0753 7.08094L19.5169 15.3966C19.3535 15.9343 19.0211 16.4051 18.569 16.739C18.1169 17.0729 17.5692 17.2521 17.0072 17.25H7.77469C7.2046 17.2482 6.65046 17.0616 6.1953 16.7183C5.74015 16.3751 5.40848 15.8936 5.25 15.3459L2.04469 4.125H1.125C0.826631 4.125 0.540483 4.00647 0.329505 3.7955C0.118526 3.58452 0 3.29837 0 3C0 2.70163 0.118526 2.41548 0.329505 2.2045C0.540483 1.99353 0.826631 1.875 1.125 1.875H2.32687C2.73407 1.87626 3.12988 2.00951 3.45493 2.25478C3.77998 2.50004 4.01674 2.84409 4.12969 3.23531L4.81312 5.625H21C21.1761 5.62499 21.3497 5.6663 21.5069 5.74561C21.664 5.82492 21.8004 5.94001 21.905 6.08164C22.0096 6.22326 22.0795 6.38746 22.1091 6.56102C22.1387 6.73458 22.1271 6.91266 22.0753 7.08094ZM19.4766 7.875H5.45531L7.41375 14.7281C7.43617 14.8065 7.48354 14.8755 7.54867 14.9245C7.6138 14.9736 7.69315 15.0001 7.77469 15H17.0072C17.0875 15.0002 17.1656 14.9746 17.2303 14.927C17.2949 14.8794 17.3426 14.8123 17.3662 14.7356L19.4766 7.875Z" fill="#603CC6"/>
+							</svg>
+							<span class="header__cart-count">3</span>
+						</button>
+						<button type="button" class="header__burger" aria-label="Меню">
+							<span></span><span></span><span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="catalog-menu">
+				<div class="catalog-menu__top">
+					<a href="/" class="catalog-menu__logo">
+						<picture>
+							<source srcset="./img/logo-mob.png" media="(max-width: 1200px)">
+							<source srcset="./img/logo.png" media="(min-width: 1201px)">
+							<img src="./img/logo.png" alt="PROSISTEMIKA">
+						</picture>
+					</a>
+					<button type="button" class="catalog-menu__close">
+						<span class="catalog-menu__close-text">Закрыть</span>
+						<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+					</button>
+				</div>
+				<div class="catalog-menu__center">
+					<button type="button" class="catalog-menu__toggle">
+						<span>Каталог</span>
+						<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+					</button>
+					<div class="catalog-menu__body">
+						<ul class="catalog-menu__col">
+							<li><a href="#">Модули</a></li>
+							<li><a href="#">Контроллеры</a></li>
+							<li><a href="#">Преобразователи</a></li>
+							<li><a href="#">Блоки управления</a></li>
+							<li><a href="#">Панель оператора</a></li>
+							<li><a href="#">Датчики</a></li>
+							<li><a href="#">Кабели</a></li>
+							<li><a href="#">Пневмооборудование</a></li>
+							<li><a href="#">Сервопривод</a></li>
+							<li><a href="#">Приводная техника</a></li>
+						</ul>
+						<ul class="catalog-menu__col">
+							<li><a href="#">Вентиляторы</a></li>
+							<li><a href="#">Выключатели</a></li>
+							<li><a href="#">Автоматы</a></li>
+							<li><a href="#">Контакторы</a></li>
+							<li><a href="#">Энкодеры</a></li>
+							<li><a href="#">Реле</a></li>
+							<li><a href="#">Карты памяти</a></li>
+							<li><a href="#">Предохранители</a></li>
+							<li><a href="#">Сканеры</a></li>
+							<li><a href="#">Соединители</a></li>
+						</ul>
+						<ul class="catalog-menu__col">
+							<li><a href="#">Соединители</a></li>
+							<li><a href="#">Адаптеры</a></li>
+							<li><a href="#">Кнопки</a></li>
+							<li><a href="#">Коммутаторы</a></li>
+							<li><a href="#">Клеммы</a></li>
+							<li><a href="#">Программное обеспечение</a></li>
+							<li><a href="#">Диоды</a></li>
+							<li><a href="#">Зажимы</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Измерительные приборы</a></li>
+						</ul>
+					</div>
+					<nav class="catalog-menu__links">
+						<a href="#">Новости</a>
+						<a href="#">Покупателям</a>
+						<a href="#">Контакты</a>
+					</nav>
+				</div>
+				<div class="catalog-menu__footer">
+					<a href="tel:+78002003047" class="catalog-menu__phone">+7 (800) 200 -30-47</a>
+					<a href="mailto:sale@prosistemika.ru" class="catalog-menu__email">sale@prosistemika.ru</a>
+					<div class="catalog-menu__socials">
+						<a href="#" class="catalog-menu__social" aria-label="Telegram">
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						</a>
+						<a href="#" class="catalog-menu__social" aria-label="WhatsApp">
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+						</a>
+						<a href="#" class="catalog-menu__social" aria-label="VK">
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><text x="12" y="17" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="currentColor">VK</text></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+	</header>
+
+	<main>
+        <section class="breadcrumbs">
+            <div class="wrapper">
+                <div class="breadcrumbs__content">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__arrow">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.45312 9.96004L7.71313 6.70004C8.09813 6.31504 8.09813 5.68504 7.71313 5.30004L4.45312 2.04004" stroke="#99A2B3" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="breadcrumbs__curr">Каталог</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="in-catalog section-pb">
+            <div class="wrapper">
+                <h1 class="in-catalog__title section-title">Каталог</h1>
+                <div class="in-catalog__content">
+                    <aside class="in-catalog__sidebar filters">
+                        <button type="button" class="filters__toggler">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 4V16V20M12 7V4M12 20V11" stroke="#22222E" stroke-linecap="round"/>
+                                <path d="M5 17C6.10457 17 7 16.1046 7 15C7 13.8954 6.10457 13 5 13C3.89543 13 3 13.8954 3 15C3 16.1046 3.89543 17 5 17Z" fill="#22222E" stroke="#22222E" stroke-linecap="round"/>
+                                <path d="M12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z" fill="#22222E" stroke="#22222E" stroke-linecap="round"/>
+                            </svg>
+                            Фильтры
+                        </button>
+                        <div class="filters__dropdown">
+                            <div class="filters__blocks">
+                                <div class="filters__block filters__block--base">
+                                    <div class="filters__cell">
+                                        <div class="filters__title show-pc">Фильтры</div>
+                                        <div class="filters__body filters-base">
+                                            <div class="filters-inps">
+                                                <input type="text" class="filters-inp" placeholder="Поиск по названию" />
+                                                <input type="text" class="filters-inp" placeholder="Поиск по артикулу" />
+                                            </div>
+                                            <label class="filters-check">
+                                                <input type="checkbox" checked hidden>
+                                                <span class="filters-check__box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                </span>
+                                                <span class="filters-check__text">Товары в наличии</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="filters__cell">
+                                        <div class="filters__title">Цена</div>
+                                        <div class="filters__body filters-price">
+                                            <div
+                                                class="price-filter"
+                                                data-price-slider-from="0"
+                                                data-price-slider-to="80000"
+                                            >
+                                                <div class="filters-inps filters-inps--horizontal">
+                                                    <input type="number" class="filters-inp price-filter__from" placeholder="0" />
+                                                    <input type="number" class="filters-inp price-filter__to" placeholder="80000" />
+                                                </div>
+                                                <div class="price-filter__slider"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block">
+                                    <div class="filters__cell filters__cell--accordion">
+                                        <div class="filters__title">
+                                            Категории
+                                            <img src="./img/icons/chevron-down.svg" alt="" width="18" height="18">
+                                        </div>
+                                        <div class="filters__body">
+                                            <div class="filters-checks">
+                                                <label class="filters-check">
+                                                    <input type="checkbox" checked hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters__block">
+                                    <div class="filters__cell filters__cell--accordion">
+                                        <div class="filters__title">
+                                            Бренд
+                                            <img src="./img/icons/chevron-down.svg" alt="" width="18" height="18">
+                                        </div>
+                                        <div class="filters__body">
+                                            <input type="text" class="filters-inp" placeholder="Поиск по названию" />
+                                            
+                                            <div class="filters-checks">
+                                                <label class="filters-check">
+                                                    <input type="checkbox" checked hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                                <label class="filters-check">
+                                                    <input type="checkbox" hidden>
+                                                    <span class="filters-check__box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                                    </span>
+                                                    <span class="filters-check__text">Название</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters__actions">
+                                <button type="button" class="filters__apply btn btn--primary">Применить</button>
+                                <button type="button" class="filters__reset btn btn--outlined">Сбросить фильтры</button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="in-catalog__main">
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                            <div class="product-card">
+                                <a href="#" class="product-card__img"><img src="./img/in-product-img.webp" alt=""></a>
+                                <a href="#" class="product-card__name">Оптоволоконный кабель SICK LL3-DK66</a>
+                                <div class="product-card__id">Артикул: LL3-DK66</div>
+                                <div class="product-card__price">999 руб.</div>
+                                <button type="button" class="product-card__btn btn btn--primary">В корзину</button>
+                            </div>
+                        </div>
+
+                        <ul class="pagination section-pt">
+                            <li class="pagination__item pagination__item--curr">
+                                <a href="#" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">36</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.9375 13.2797L10.2842 8.93306C10.7975 8.41973 10.7975 7.57973 10.2842 7.06639L5.9375 2.71973" stroke="#99A2B3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper wrapper--full">
+			<div class="footer__content">
+				<div class="wrapper">
+					<div class="lead">
+						<div class="lead__inner" style="background-image: url('./img/lead-bg.webp');">
+							<div class="lead__content">
+								<h2 class="lead__title">Не нашли нужное оборудование?</h2>
+								<p class="lead__text">Оставьте свои контактные данные и артикул оборудования, которое вам нужно — наш менеджер найдет его и свяжется с вами.</p>
+							</div>
+							<form class="lead__form form" data-validate>
+								<input type="text" class="form__input" placeholder="Артикул" required data-pattern="[A-Za-zА-Яа-яЁё0-9][A-Za-zА-Яа-яЁё0-9\s./-]*" data-error-empty="Укажите артикул оборудования" data-error="Введите корректный артикул">
+								<input type="text" class="form__input" placeholder="Ваше имя" required data-pattern="[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s'-]{1,}" data-error-empty="Укажите ваше имя" data-error="Введите корректное имя">
+								<input type="email" class="form__input" placeholder="E-mail" required data-pattern="[^\s@]+@[^\s@]+\.[A-Za-zА-Яа-яЁё]{2,}" data-error-empty="Укажите e-mail" data-error="Введите корректный e-mail">
+								<input type="tel" class="form__input" placeholder="+7 (___) ___-__-__" required data-mask="+7 (999) 999-99-99" data-pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" data-error-empty="Укажите номер телефона" data-error="Введите номер полностью">
+								<label class="form__check checkbox">
+									<input type="checkbox" required data-error="Подтвердите согласие с политикой конфиденциальности">
+									<span class="checkbox__box">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+									</span>
+									<span class="checkbox__text">Согласен с политикой конфиденциальности</span>
+								</label>
+								<button type="submit" class="btn btn--primary form__submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+					
+					<div class="footer__top">
+						<div class="footer__brand">
+							<a href="/" class="footer__logo">
+								<img src="./img/logo-white.svg" alt="PROSISTEMIKA" width="441" height="62">
+							</a>
+							<p class="footer__copy">©2024г. PROSISTEMIKA Копирование и использование материалов без разрешения правообладателя запрещено</p>
+						</div>
+						<div class="footer__info">
+							<div class="footer__info-col">
+								<div class="footer__label">Адрес</div>
+								<p>Санкт-Петербург, <br>Петергофское шоссе 73у</p>
+							</div>
+							<div class="footer__info-col">
+								<div class="footer__label">Телефон</div>
+								<a href="tel:+78002003047">+7 (800) 200-30-47</a>
+								<a href="tel:+78126026101">+7 (812) 602-61-01</a>
+							</div>
+							<div class="footer__info-col">
+								<div class="footer__label">E-mail</div>
+								<a href="mailto:sale@prosistemika.ru">sale@prosistemika.ru</a>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="footer__center">
+						<div class="footer__col footer__col--subscribe">
+							<h3 class="footer__heading">Подпишитесь на рассылку</h3>
+							<p class="footer__caption">Оставайтесь в курсе новостей и узнавайте первыми о новинках и спецпредложениях</p>
+							<form class="footer__form" data-validate>
+								<input type="email" class="footer__input" placeholder="Ваш e-mail" required data-pattern="[^\s@]+@[^\s@]+\.[A-Za-zА-Яа-яЁё]{2,}" data-error-empty="Укажите e-mail" data-error="Введите корректный e-mail">
+								<button type="submit" class="btn btn--primary footer__submit">Подписаться</button>
+							</form>
+							<div class="footer__socials">
+								<a href="#" aria-label="Telegram">
+									<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_956_24564)">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.8846 12.8628C9.67437 11.2116 12.2015 10.1231 13.4659 9.59716C17.0762 8.09554 17.8263 7.83469 18.3153 7.82608C18.4228 7.82419 18.6633 7.85084 18.819 7.97722C18.9505 8.08394 18.9867 8.2281 19.0041 8.32928C19.0214 8.43046 19.0429 8.66095 19.0258 8.84104C18.8301 10.8966 17.9836 15.8851 17.5529 18.1874C17.3707 19.1616 17.0119 19.4882 16.6645 19.5202C15.9096 19.5896 15.3363 19.0213 14.6051 18.542C13.461 17.7919 12.8146 17.3251 11.704 16.5932C10.4205 15.7474 11.2525 15.2825 11.984 14.5228C12.1754 14.3239 15.5017 11.2985 15.566 11.024C15.5741 10.9897 15.5816 10.8617 15.5055 10.7942C15.4295 10.7266 15.3173 10.7497 15.2364 10.7681C15.1216 10.7941 13.2938 12.0022 9.75291 14.3924C9.23409 14.7487 8.76416 14.9223 8.34311 14.9132C7.87895 14.9032 6.98607 14.6507 6.32232 14.435C5.50819 14.1703 4.86114 14.0304 4.91748 13.581C4.94683 13.3469 5.2692 13.1075 5.8846 12.8628Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_956_24564">
+										<rect width="26" height="26" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="#" aria-label="WhatsApp">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.62762 12.9641C4.65796 13.525 5.81913 13.8191 7 13.8191C10.8591 13.8191 14 10.7189 14 6.90957C14 3.1003 10.8591 0 7 0C3.14087 0 0 3.1003 0 6.90957C0 8.13315 0.326545 9.33093 0.949504 10.3848L0.0586579 14L3.62762 12.9641ZM3.99933 3.6808C4.14754 3.54624 4.34014 3.47427 4.54146 3.47427H4.75466C5.03681 3.47427 5.28806 3.64873 5.38397 3.90926L5.81988 5.09528C5.8603 5.20715 5.84049 5.33155 5.76519 5.42542L5.42043 5.85023C5.28411 6.01608 5.24765 6.24295 5.3269 6.44089C5.74459 7.47826 6.98655 8.20739 7.63569 8.52818C7.87109 8.64396 8.15324 8.60015 8.3395 8.41787L8.72073 8.04157C8.81187 7.9516 8.9482 7.91952 9.07184 7.95707L10.2282 8.32164C10.5064 8.41004 10.695 8.66429 10.695 8.95219V9.24244C10.695 9.45445 10.6094 9.65863 10.4573 9.80884C9.33101 10.9065 7.46207 10.1014 6.25117 9.36839C5.37854 8.83954 4.61767 8.14481 4.05175 7.30153C2.68218 5.2611 3.51429 4.11741 3.99933 3.6808Z" fill="white"/>
+									</svg>
+								</a>
+								<a href="#" aria-label="VK">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_956_24556)">
+										<path d="M12.7668 17.29C7.29683 17.29 4.17687 13.54 4.04688 7.30005H6.78688C6.87688 11.88 8.89683 13.82 10.4968 14.22V7.30005H13.0769V11.25C14.6569 11.08 16.3167 9.28005 16.8767 7.30005H19.4568C19.0268 9.74005 17.2268 11.54 15.9468 12.28C17.2268 12.88 19.2769 14.45 20.0569 17.29H17.2168C16.6068 15.39 15.0869 13.92 13.0769 13.72V17.29H12.7668Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_956_24556">
+										<rect width="24" height="24" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</div>
+
+							<ul class="footer__sublist">
+								<li><a href="#">Политика конфиденциальности</a></li>
+								<li><a href="#">Согласие на обработку персональных данных</a></li>
+								<li class="show-mob"><a href="#">Разработка сайта</a></li>
+							</ul>
+						</div>
+						<div class="footer__cols">
+							<div class="footer__col footer__col--catalog">
+								<div class="footer__label">Каталог</div>
+								<div class="footer__lists">
+									<ul class="footer__list">
+										<li><a href="#">Модули</a></li>
+										<li><a href="#">Контроллеры</a></li>
+										<li><a href="#">Преобразователи</a></li>
+										<li><a href="#">Блоки управления</a></li>
+										<li><a href="#">Панель оператора</a></li>
+										<li><a href="#">Датчики</a></li>
+										<li><a href="#">Кабели</a></li>
+										<li><a href="#">Пневмооборудование</a></li>
+										<li><a href="#">Сервопривод</a></li>
+									</ul>
+									<ul class="footer__list">
+										<li><a href="#">Приводная техника</a></li>
+										<li><a href="#">Вентиляторы</a></li>
+										<li><a href="#">Выключатели</a></li>
+										<li><a href="#">Автоматы</a></li>
+										<li><a href="#">Контакторы</a></li>
+										<li><a href="#">Энкодеры</a></li>
+										<li><a href="#">Реле</a></li>
+										<li><a href="#">Карты памяти</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="footer__col footer__col--buyers">
+								<div class="footer__label">Покупателям</div>
+								<ul class="footer__list">
+									<li><a href="#">Каталог</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Оплата и доставка</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<ul class="footer__sublist">
+									<li class="show-pc"><a href="#">Партнерам</a></li>
+									<li><a href="#">Заявка на оборудование</a></li>
+									<li class="show-pc"><a href="#">Разработка сайта</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal" id="modal-callback">
+        <div class="modal__bg" data-close></div>
+        <div class="modal__content">
+            <div class="modal__title">Закажите обратный звонок</div>
+            <form class="modal__form" data-validate>
+				<div class="modal__inps">
+					<input type="text" class="modal__inp" placeholder="Ваше имя" required data-pattern="[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s'-]{1,}" data-error-empty="Укажите ваше имя" data-error="Введите корректное имя">
+					<input type="text" inputmode="tel" class="modal__inp" placeholder="+7 (___) ___-__-__" required data-mask="+7 (999) 999-99-99" data-pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" data-error-empty="Укажите номер телефона" data-error="Введите номер полностью">
+				</div>
+				<label class="modal__check checkbox">
+					<input type="checkbox" required data-error="Необходимо согласие на обработку персональных данных">
+					<span class="checkbox__box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+					</span>
+					<span class="checkbox__text">Я даю согласие на обработку персональных данных в <br>соответствии с Федеральным законом</span>
+				</label>
+                <button type="submit" class="btn btn--primary">Отправить</button>
+            </form>
+        </div>
+		<button type="button" class="modal__close" data-close>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M21 21L3 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M21.0001 3L3 21.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+    </div>
+
+	<div class="modal" id="modal-sent">
+        <div class="modal__bg" data-close></div>
+        <div class="modal__content">
+            <div class="modal__title">Ваша заявка отправлена!</div>
+			<div class="modal__descr">Благодарим за заявку. Мы свяжемся с вами в ближайшее время, чтобы уточнить детали.</div>
+			<button type="submit" class="modal__btn btn btn--primary">Отлично</button>
+        </div>
+		<button type="button" class="modal__close" data-close>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M21 21L3 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M21.0001 3L3 21.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+    </div>
+
+	<div class="modal" id="modal-enroll">
+        <div class="modal__bg" data-close></div>
+        <div class="modal__content">
+            <div class="modal__title">Ваша заявка отправлена!</div>
+			<form class="modal__form" data-validate>
+				<div class="modal__inps">
+					<input type="text" class="modal__inp" placeholder="Имя" required data-pattern="[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s'-]{1,}" data-error-empty="Укажите имя" data-error="Введите корректное имя">
+					<input type="text" class="modal__inp" placeholder="Фамилия" required data-pattern="[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s'-]{1,}" data-error-empty="Укажите фамилию" data-error="Введите корректную фамилию">
+					<input type="text" class="modal__inp" placeholder="Название компании (необязательно)" data-pattern=".{2,}" data-error="Введите название компании">
+					<input type="text" class="modal__inp" placeholder="ИНН" required data-pattern="\d{10}|\d{12}" data-error-empty="Укажите ИНН" data-error="ИНН состоит из 10 или 12 цифр">
+					<input type="text" class="modal__inp" placeholder="ИНН" required data-pattern="\d{10}|\d{12}" data-error-empty="Укажите ИНН" data-error="ИНН состоит из 10 или 12 цифр">
+					<input type="text" inputmode="tel" class="modal__inp" placeholder="+7 (___) ___-__-__" required data-mask="+7 (999) 999-99-99" data-pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" data-error-empty="Укажите номер телефона" data-error="Введите номер полностью">
+					<input type="text" class="modal__inp" placeholder="E-mail" required data-pattern="[^\s@]+@[^\s@]+\.[A-Za-zА-Яа-яЁё]{2,}" data-error-empty="Укажите e-mail" data-error="Введите корректный e-mail">
+				</div>
+				<label class="modal__check checkbox">
+					<input type="checkbox" required data-error="Необходимо согласие на обработку персональных данных">
+					<span class="checkbox__box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+					</span>
+					<span class="checkbox__text">Я даю согласие на обработку персональных данных в <br>соответствии с Федеральным законом</span>
+				</label>
+                <button type="submit" class="btn btn--primary">Отправить</button>
+            </form>
+        </div>
+		<button type="button" class="modal__close" data-close>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M21 21L3 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M21.0001 3L3 21.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+    </div>
+
+	<div class="modal" id="modal-find">
+        <div class="modal__bg" data-close></div>
+        <div class="modal__content">
+            <div class="modal__title">Не нашли нужный товар?</div>
+			<p class="modal__descr">Мы часто обновляем ассортимент на сайте и может быть именно сейчас нужный вам товар на актуализации! Оставьте свои контакты и мы подберем вам нужный товар или предложим аналог.</p>
+			<form class="modal__form" data-validate>
+				<div class="modal__inps">
+					<input type="text" class="modal__inp" placeholder="Имя" required data-pattern="[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\s'-]{1,}" data-error-empty="Укажите имя" data-error="Введите корректное имя">
+					<input type="text" class="modal__inp" placeholder="E-mail" required data-pattern="[^\s@]+@[^\s@]+\.[A-Za-zА-Яа-яЁё]{2,}" data-error-empty="Укажите e-mail" data-error="Введите корректный e-mail">
+					<input type="text" class="modal__inp" placeholder="Артикул (необязательно)" data-pattern="[A-Za-zА-Яа-яЁё0-9][A-Za-zА-Яа-яЁё0-9\s./-]*" data-error="Введите корректный артикул">
+				</div>
+				<label class="modal__check checkbox">
+					<input type="checkbox" required data-error="Необходимо согласие на обработку персональных данных">
+					<span class="checkbox__box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+					</span>
+					<span class="checkbox__text">Я даю согласие на обработку персональных данных в <br>соответствии с Федеральным законом</span>
+				</label>
+                <button type="submit" class="btn btn--primary">Отправить</button>
+            </form>
+        </div>
+		<button type="button" class="modal__close" data-close>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M21 21L3 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M21.0001 3L3 21.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+    </div>
+
+	<div class="modal" id="modal-developers">
+        <div class="modal__bg" data-close></div>
+        <div class="modal__content">
+            <div class="modal__title">Разработка сайта</div>
+			<div class="modal__team">
+				<div class="modal__team_images">
+					<div class="modal__team_image"><img src="./img/team-img-1.png" alt=""></div>
+					<div class="modal__team_image"><img src="./img/team-img-2.png" alt=""></div>
+				</div>
+
+				<div class="modal__team_items">
+					<div class="modal__team_item">
+						<div class="modal__team_name">Алексей, <br>Фронтенд-разработчик</div>
+						<a href="#" class="modal__team_link">Написать в Telegram</a>
+					</div>
+					<div class="modal__team_item">
+						<div class="modal__team_name">Ольга, дизайнер</div>
+						<a href="#" class="modal__team_link">Написать в Telegram</a>
+					</div>
+				</div>
+			</div>
+        </div>
+		<button type="button" class="modal__close" data-close>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M21 21L3 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M21.0001 3L3 21.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+    </div>
+
+	<!-- <div class="cookie">
+		<p class="cookie__text">
+			Используем куки и рекомендательные технологии, оставаясь на сайте, вы соглашаетесь на их использование.
+		</p>
+		<button class="cookie__btn btn btn--primary btn--sm">Я согласен</button>
+	</div> -->
+
+	<script src="./libs/nouislider/nouislider.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
